@@ -14,9 +14,9 @@ module.exports = {
 			white: colors.white,
 			gray: colors.coolGray,
 			primary: {
-				default: '#FF385C',
-				light: '#FF4466',
-				dark: '#FF3055',
+				default: '#4263eb',
+				light: '#4c6ef5',
+				dark: '#3b5bdb',
 			},
 		},
 	},

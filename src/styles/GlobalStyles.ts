@@ -8,13 +8,8 @@ const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
 
-  header, footer {
+  header, main, footer {
     max-width: 1920px;
-    margin: 0 auto;
-  }
-
-  main > * {
-    max-width: 1536px;
     margin: 0 auto;
   }
 
@@ -24,15 +19,6 @@ const GlobalStyles = createGlobalStyle`
       -webkit-backdrop-filter: blur(5px);
       backdrop-filter: blur(5px);
     }
-  }
-
-  /* NProgress */
-  #nprogress > div.bar {
-    background-color: #ED5359;
-  }
-  #nprogress > div.spinner > div {
-    border-top-color: #ED5359;
-    border-left-color: #ED5359;
   }
 
 `
