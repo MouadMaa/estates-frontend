@@ -7,10 +7,10 @@ interface StyledHeaderProps {
 }
 
 export const StyledHeader = styled.header(({ showHeaderBG, showSearch, showDropdown }: StyledHeaderProps) => [
-	tw`sticky top-0 z-40 flex items-center justify-between w-full h-24 px-4 md:px-8 text-gray-50 transition-all ease-out duration-300`,
+	tw`sticky top-0 z-40 grid grid-cols-2 sm:grid-cols-3 place-items-center w-full h-24 px-4 md:px-8 text-gray-50 transition-all ease-out duration-300`,
 	css`
 		> a {
-			${tw`text-xl font-semibold tracking-widest transition-colors`};
+			${tw`text-xl font-semibold tracking-widest transition-colors justify-self-start`};
 		}
 
 		> div {
@@ -30,7 +30,7 @@ export const StyledHeader = styled.header(({ showHeaderBG, showSearch, showDropd
 		}
 
 		nav {
-			${tw`flex items-center space-x-2`};
+			${tw`flex items-center space-x-2 justify-self-end`};
 
 			a {
 				${tw`hidden sm:inline-block tracking-wider px-5 py-2 rounded-2xl transition-colors duration-300 hover:bg-gray-50 hover:bg-opacity-5`};
