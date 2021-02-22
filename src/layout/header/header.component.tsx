@@ -1,12 +1,17 @@
-import React, { FC, useEffect, useState } from 'react'
+import React, { FC, useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
-import 'twin.macro'
 
+import { useOnClickOutside } from '@/hooks/useOnClickOutside'
 import { StyledHeader } from './header.styles'
 
 const Header: FC = () => {
 	const [ showHeaderBG, setHeaderShowBG ] = useState(false)
 	const [ showSearch, setShowSearch ] = useState(false)
+	const [ showDropdown, setShowDropdown ] = useState(false)
+
+	const dropdownButtonRef = useRef()
+
+	useOnClickOutside(dropdownButtonRef, () => setShowDropdown(false))
 
 	useEffect(() => {
 		window.addEventListener('scroll', onScrollShowBG)
@@ -18,8 +23,10 @@ const Header: FC = () => {
 		setShowSearch(window.scrollY >= 160)
 	}
 
+	const toggleDropdown = () => setShowDropdown(!showDropdown)
+
 	return (
-		<StyledHeader showHeaderBG={showHeaderBG} showSearch={showSearch}>
+		<StyledHeader showHeaderBG={showHeaderBG} showSearch={showSearch} showDropdown={showDropdown}>
 			<Link href='/'>
 				<a>Estates</a>
 			</Link>
@@ -39,11 +46,21 @@ const Header: FC = () => {
 					<a>Devenez hôte</a>
 				</Link>
 
-				<button>
-					<svg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' aria-hidden='true'>
-						<path d='M21 18H3v-2h18v2zm0-5H3v-2h18v2zm0-5H3V6h18v2z' />
-					</svg>
-				</button>
+				<div ref={dropdownButtonRef}>
+					<button onClick={toggleDropdown}>
+						<svg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' aria-hidden='true'>
+							<path d='M21 18H3v-2h18v2zm0-5H3v-2h18v2zm0-5H3V6h18v2z' />
+						</svg>
+					</button>
+
+					<div>
+						<button>Connexion</button>
+						<div />
+						<button>Devenez hôte</button>
+						<button>Contact</button>
+						<button>Aide</button>
+					</div>
+				</div>
 			</nav>
 		</StyledHeader>
 	)
