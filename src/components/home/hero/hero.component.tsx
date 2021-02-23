@@ -15,6 +15,7 @@ const Hero: FC = () => {
 				<button>Opertions</button>
 				<button>Ville</button>
 				<button>Type</button>
+				<button>Prix</button>
 				<button>
 					<svg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
 						<circle cx='11.767' cy='11.767' r='8.989' strokeLinecap='round' strokeLinejoin='round' />
