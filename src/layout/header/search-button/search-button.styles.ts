@@ -4,7 +4,7 @@ export const StyledSearchButton = styled.button(({ show }: { show: boolean }) =>
   tw`hidden sm:flex items-center p-0.5 space-x-6 border-2 rounded-2xl cursor-pointer pointer-events-none opacity-0 transform scale-50 translate-y-6 origin-center transition duration-300 focus:outline-none`,
   css`
     span {
-      ${tw`text-sm ml-2 select-none`};
+      ${tw`text-sm text-gray-400 ml-2 select-none`};
     }
 
     div {

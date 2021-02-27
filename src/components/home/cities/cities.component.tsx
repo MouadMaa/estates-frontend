@@ -8,7 +8,7 @@ import { StyledCities } from './cities.styles'
 const Cities: FC = () => {
   return (
     <StyledCities>
-      <h2>Villes immobilières au Maroc</h2>
+      <h2>Villes de logement au Maroc</h2>
 
       <div>
         <CityCard />

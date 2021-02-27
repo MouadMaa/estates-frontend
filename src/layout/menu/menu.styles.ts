@@ -4,7 +4,7 @@ export const StyledMenu = styled.menu(({ showMenu }: { showMenu: boolean }) => [
   tw`relative p-0`,
   css`
     > button {
-      ${tw`flex items-center justify-between space-x-2 text-gray-600 rounded-2xl bg-gray-50 shadow-sm focus:outline-none`};
+      ${tw`flex items-center justify-between space-x-2 text-gray-500 rounded-2xl bg-gray-50 shadow-sm focus:outline-none`};
       padding: 5px;
 
       svg {

@@ -4,7 +4,7 @@ export const StyledCityCard = styled.article(() => [
   tw`relative flex items-center justify-center w-full h-44 rounded-lg overflow-hidden cursor-pointer shadow-md transition-shadow duration-500 hover:shadow-lg`,
   css`
     img {
-      ${tw`absolute h-full w-full object-cover transition-transform duration-500 ease-in-out transform`};
+      ${tw`absolute transition-transform duration-500 ease-in-out transform`};
     }
 
     div {
