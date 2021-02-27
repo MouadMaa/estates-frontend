@@ -1,0 +1,7 @@
+fragment Cities on Cities {
+  id
+  name
+  image {
+    url
+  }
+}

@@ -1,9 +1,12 @@
 import { FC, Fragment } from 'react'
+import { GetStaticProps } from 'next'
 
+import { initializeApollo } from '@/apollo/apolloClient'
+import { CitiesDocument } from '@/generated/graphql'
 import Hero from '@/components/home/hero/hero.component'
+import RecommendedProperties from '@/components/home/recommended-properties/recommended-properties.components'
 import Cities from '@/components/home/cities/cities.component'
 import Types from '@/components/home/types/types.component'
-import RecommendedProperties from '@/components/home/recommended-properties/recommended-properties.components'
 
 const Home: FC = () => {
   return (
@@ -17,3 +20,18 @@ const Home: FC = () => {
 }
 
 export default Home
+
+export const getStaticProps: GetStaticProps = async () => {
+  const apolloClient = initializeApollo()
+
+  await apolloClient.query({
+    query: CitiesDocument,
+  })
+
+  return {
+    revalidate: 600,
+    props: {
+      initialApolloState: apolloClient.cache.extract(),
+    },
+  }
+}
