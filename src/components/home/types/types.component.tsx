@@ -7,7 +7,7 @@ import { StyledTypes } from './types.styles'
 const Types: FC = () => {
   return (
     <StyledTypes>
-      <h2>Types de logement au Maroc</h2>
+      <h2>Types de propriétés</h2>
 
       <div>
         <TypeCard />
@@ -15,7 +15,7 @@ const Types: FC = () => {
         <TypeCard />
       </div>
 
-      <TextLink href='/' text='Découvrir plus des types' />
+      <TextLink href='/' text='Découvrez plus des types' />
     </StyledTypes>
   )
 }

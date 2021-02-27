@@ -8,7 +8,7 @@ import { StyledCities } from './cities.styles'
 const Cities: FC = () => {
   return (
     <StyledCities>
-      <h2>Villes de logement au Maroc</h2>
+      <h2>Propriétés au Maroc par ville</h2>
 
       <div>
         <CityCard />
@@ -17,7 +17,7 @@ const Cities: FC = () => {
         <CityCard />
       </div>
 
-      <TextLink href='/' text='Découvrir plus des villes' />
+      <TextLink href='/' text='Découvrez plus de villes' />
     </StyledCities>
   )
 }

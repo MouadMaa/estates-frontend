@@ -1,7 +1,7 @@
 import tw, { css, styled } from 'twin.macro'
 
 export const StyledTypes = styled.section(() => [
-  tw`px-4 sm:px-8 py-14`,
+  tw`px-4 sm:px-8 pt-4 pb-14`,
   css`
     h2 {
       ${tw`text-lg sm:text-xl font-semibold tracking-wide text-gray-600`};
