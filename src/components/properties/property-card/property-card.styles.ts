@@ -1,7 +1,7 @@
 import tw, { css, styled } from 'twin.macro'
 
 export const StyledPropertyCard = styled.article(() => [
-  tw`grid grid-cols-3 h-44 cursor-pointer rounded-lg shadow-md overflow-hidden transition-shadow duration-500 hover:shadow-lg`,
+  tw`grid grid-cols-3 h-44 cursor-pointer rounded-lg shadow-lg overflow-hidden transition-shadow duration-500`,
   css`
     figure {
       ${tw`relative flex items-center w-full h-full`};
