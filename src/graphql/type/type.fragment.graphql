@@ -1,0 +1,7 @@
+fragment Type on Type {
+  id
+  name
+  image {
+    url
+  }
+}

@@ -2,7 +2,7 @@ import { FC, Fragment } from 'react'
 import { GetStaticProps } from 'next'
 
 import { initializeApollo } from '@/apollo/apolloClient'
-import { CitiesDocument } from '@/generated/graphql'
+import { CitiesDocument, TypesDocument } from '@/generated/graphql'
 import Hero from '@/components/home/hero/hero.component'
 import RecommendedProperties from '@/components/home/recommended-properties/recommended-properties.components'
 import Cities from '@/components/home/cities/cities.component'
@@ -26,6 +26,10 @@ export const getStaticProps: GetStaticProps = async () => {
 
   await apolloClient.query({
     query: CitiesDocument,
+  })
+
+  await apolloClient.query({
+    query: TypesDocument,
   })
 
   return {

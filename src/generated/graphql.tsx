@@ -191,6 +191,7 @@ export type Type = {
   created_at: Scalars['DateTime'];
   updated_at: Scalars['DateTime'];
   name: Scalars['String'];
+  image?: Maybe<UploadFile>;
   published_at?: Maybe<Scalars['DateTime']>;
 };
 
@@ -213,6 +214,7 @@ export type TypeGroupBy = {
   created_at?: Maybe<Array<Maybe<TypeConnectionCreated_At>>>;
   updated_at?: Maybe<Array<Maybe<TypeConnectionUpdated_At>>>;
   name?: Maybe<Array<Maybe<TypeConnectionName>>>;
+  image?: Maybe<Array<Maybe<TypeConnectionImage>>>;
   published_at?: Maybe<Array<Maybe<TypeConnectionPublished_At>>>;
 };
 
@@ -240,6 +242,12 @@ export type TypeConnectionName = {
   connection?: Maybe<TypeConnection>;
 };
 
+export type TypeConnectionImage = {
+  __typename?: 'TypeConnectionImage';
+  key?: Maybe<Scalars['ID']>;
+  connection?: Maybe<TypeConnection>;
+};
+
 export type TypeConnectionPublished_At = {
   __typename?: 'TypeConnectionPublished_at';
   key?: Maybe<Scalars['DateTime']>;
@@ -248,6 +256,7 @@ export type TypeConnectionPublished_At = {
 
 export type TypeInput = {
   name: Scalars['String'];
+  image?: Maybe<Scalars['ID']>;
   published_at?: Maybe<Scalars['DateTime']>;
   created_by?: Maybe<Scalars['ID']>;
   updated_by?: Maybe<Scalars['ID']>;
@@ -255,6 +264,7 @@ export type TypeInput = {
 
 export type EditTypeInput = {
   name?: Maybe<Scalars['String']>;
+  image?: Maybe<Scalars['ID']>;
   published_at?: Maybe<Scalars['DateTime']>;
   created_by?: Maybe<Scalars['ID']>;
   updated_by?: Maybe<Scalars['ID']>;
@@ -814,7 +824,7 @@ export type DeleteUserPayload = {
   user?: Maybe<UsersPermissionsUser>;
 };
 
-export type Morph = UsersPermissionsMe | UsersPermissionsMeRole | UsersPermissionsLoginPayload | UserPermissionsPasswordPayload | City | CityConnection | CityAggregator | CityGroupBy | CityConnectionId | CityConnectionCreated_At | CityConnectionUpdated_At | CityConnectionName | CityConnectionImage | CityConnectionPublished_At | CreateCityPayload | UpdateCityPayload | DeleteCityPayload | Type | TypeConnection | TypeAggregator | TypeGroupBy | TypeConnectionId | TypeConnectionCreated_At | TypeConnectionUpdated_At | TypeConnectionName | TypeConnectionPublished_At | CreateTypePayload | UpdateTypePayload | DeleteTypePayload | UploadFile | UploadFileConnection | UploadFileAggregator | UploadFileAggregatorSum | UploadFileAggregatorAvg | UploadFileAggregatorMin | UploadFileAggregatorMax | UploadFileGroupBy | UploadFileConnectionId | UploadFileConnectionCreated_At | UploadFileConnectionUpdated_At | UploadFileConnectionName | UploadFileConnectionAlternativeText | UploadFileConnectionCaption | UploadFileConnectionWidth | UploadFileConnectionHeight | UploadFileConnectionFormats | UploadFileConnectionHash | UploadFileConnectionExt | UploadFileConnectionMime | UploadFileConnectionSize | UploadFileConnectionUrl | UploadFileConnectionPreviewUrl | UploadFileConnectionProvider | UploadFileConnectionProvider_Metadata | DeleteFilePayload | UsersPermissionsPermission | UsersPermissionsRole | UsersPermissionsRoleConnection | UsersPermissionsRoleAggregator | UsersPermissionsRoleGroupBy | UsersPermissionsRoleConnectionId | UsersPermissionsRoleConnectionName | UsersPermissionsRoleConnectionDescription | UsersPermissionsRoleConnectionType | CreateRolePayload | UpdateRolePayload | DeleteRolePayload | UsersPermissionsUser | UsersPermissionsUserConnection | UsersPermissionsUserAggregator | UsersPermissionsUserGroupBy | UsersPermissionsUserConnectionId | UsersPermissionsUserConnectionCreated_At | UsersPermissionsUserConnectionUpdated_At | UsersPermissionsUserConnectionUsername | UsersPermissionsUserConnectionEmail | UsersPermissionsUserConnectionProvider | UsersPermissionsUserConnectionConfirmed | UsersPermissionsUserConnectionBlocked | UsersPermissionsUserConnectionRole | CreateUserPayload | UpdateUserPayload | DeleteUserPayload;
+export type Morph = UsersPermissionsMe | UsersPermissionsMeRole | UsersPermissionsLoginPayload | UserPermissionsPasswordPayload | City | CityConnection | CityAggregator | CityGroupBy | CityConnectionId | CityConnectionCreated_At | CityConnectionUpdated_At | CityConnectionName | CityConnectionImage | CityConnectionPublished_At | CreateCityPayload | UpdateCityPayload | DeleteCityPayload | Type | TypeConnection | TypeAggregator | TypeGroupBy | TypeConnectionId | TypeConnectionCreated_At | TypeConnectionUpdated_At | TypeConnectionName | TypeConnectionImage | TypeConnectionPublished_At | CreateTypePayload | UpdateTypePayload | DeleteTypePayload | UploadFile | UploadFileConnection | UploadFileAggregator | UploadFileAggregatorSum | UploadFileAggregatorAvg | UploadFileAggregatorMin | UploadFileAggregatorMax | UploadFileGroupBy | UploadFileConnectionId | UploadFileConnectionCreated_At | UploadFileConnectionUpdated_At | UploadFileConnectionName | UploadFileConnectionAlternativeText | UploadFileConnectionCaption | UploadFileConnectionWidth | UploadFileConnectionHeight | UploadFileConnectionFormats | UploadFileConnectionHash | UploadFileConnectionExt | UploadFileConnectionMime | UploadFileConnectionSize | UploadFileConnectionUrl | UploadFileConnectionPreviewUrl | UploadFileConnectionProvider | UploadFileConnectionProvider_Metadata | DeleteFilePayload | UsersPermissionsPermission | UsersPermissionsRole | UsersPermissionsRoleConnection | UsersPermissionsRoleAggregator | UsersPermissionsRoleGroupBy | UsersPermissionsRoleConnectionId | UsersPermissionsRoleConnectionName | UsersPermissionsRoleConnectionDescription | UsersPermissionsRoleConnectionType | CreateRolePayload | UpdateRolePayload | DeleteRolePayload | UsersPermissionsUser | UsersPermissionsUserConnection | UsersPermissionsUserAggregator | UsersPermissionsUserGroupBy | UsersPermissionsUserConnectionId | UsersPermissionsUserConnectionCreated_At | UsersPermissionsUserConnectionUpdated_At | UsersPermissionsUserConnectionUsername | UsersPermissionsUserConnectionEmail | UsersPermissionsUserConnectionProvider | UsersPermissionsUserConnectionConfirmed | UsersPermissionsUserConnectionBlocked | UsersPermissionsUserConnectionRole | CreateUserPayload | UpdateUserPayload | DeleteUserPayload;
 
 export type InputId = {
   id: Scalars['ID'];
@@ -1137,8 +1147,37 @@ export type CityFragment = (
   )> }
 );
 
+export type TypeFragment = (
+  { __typename?: 'Type' }
+  & Pick<Type, 'id' | 'name'>
+  & { image?: Maybe<(
+    { __typename?: 'UploadFile' }
+    & Pick<UploadFile, 'url'>
+  )> }
+);
+
+export type TypesQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type TypesQuery = (
+  { __typename?: 'Query' }
+  & { types?: Maybe<Array<Maybe<(
+    { __typename?: 'Type' }
+    & TypeFragment
+  )>>> }
+);
+
 export const CityFragmentDoc = gql`
     fragment City on City {
+  id
+  name
+  image {
+    url
+  }
+}
+    `;
+export const TypeFragmentDoc = gql`
+    fragment Type on Type {
   id
   name
   image {
@@ -1178,6 +1217,38 @@ export function useCitiesLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<Cit
 export type CitiesQueryHookResult = ReturnType<typeof useCitiesQuery>;
 export type CitiesLazyQueryHookResult = ReturnType<typeof useCitiesLazyQuery>;
 export type CitiesQueryResult = Apollo.QueryResult<CitiesQuery, CitiesQueryVariables>;
+export const TypesDocument = gql`
+    query Types {
+  types(where: {id: [1, 2, 3]}) {
+    ...Type
+  }
+}
+    ${TypeFragmentDoc}`;
+
+/**
+ * __useTypesQuery__
+ *
+ * To run a query within a React component, call `useTypesQuery` and pass it any options that fit your needs.
+ * When your component renders, `useTypesQuery` returns an object from Apollo Client that contains loading, error, and data properties
+ * you can use to render your UI.
+ *
+ * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
+ *
+ * @example
+ * const { data, loading, error } = useTypesQuery({
+ *   variables: {
+ *   },
+ * });
+ */
+export function useTypesQuery(baseOptions?: Apollo.QueryHookOptions<TypesQuery, TypesQueryVariables>) {
+        return Apollo.useQuery<TypesQuery, TypesQueryVariables>(TypesDocument, baseOptions);
+      }
+export function useTypesLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<TypesQuery, TypesQueryVariables>) {
+          return Apollo.useLazyQuery<TypesQuery, TypesQueryVariables>(TypesDocument, baseOptions);
+        }
+export type TypesQueryHookResult = ReturnType<typeof useTypesQuery>;
+export type TypesLazyQueryHookResult = ReturnType<typeof useTypesLazyQuery>;
+export type TypesQueryResult = Apollo.QueryResult<TypesQuery, TypesQueryVariables>;
 
       export interface PossibleTypesResultData {
         possibleTypes: {
@@ -1212,6 +1283,7 @@ export type CitiesQueryResult = Apollo.QueryResult<CitiesQuery, CitiesQueryVaria
       "TypeConnectionCreated_at",
       "TypeConnectionUpdated_at",
       "TypeConnectionName",
+      "TypeConnectionImage",
       "TypeConnectionPublished_at",
       "createTypePayload",
       "updateTypePayload",

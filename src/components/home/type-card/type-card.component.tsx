@@ -2,15 +2,24 @@ import { FC } from 'react'
 import Image from 'next/image'
 import 'twin.macro'
 
+import { TypeFragment } from '@/generated/graphql'
 import { StyledTypeCard } from './type-card.styles'
 
-const TypeCard: FC = () => {
+interface TypeCardProps {
+  type: TypeFragment
+}
+
+const TypeCard: FC<TypeCardProps> = (props) => {
+  const {
+    type: { name, image },
+  } = props
+
   return (
     <StyledTypeCard className='group'>
       <figure>
         <Image
-          src='/images/hero.jpg'
-          alt='maison'
+          src={image?.url || ''}
+          alt={name}
           layout='fill'
           objectFit='cover'
           tw='group-hover:scale-105'
@@ -18,7 +27,7 @@ const TypeCard: FC = () => {
         <div />
       </figure>
       <div>
-        <span>Maison</span>
+        <span>{name}</span>
       </div>
     </StyledTypeCard>
   )

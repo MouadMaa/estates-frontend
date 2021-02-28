@@ -1,0 +1,5 @@
+query Types {
+  types(where: { id: [1, 2, 3] }) {
+    ...Type
+  }
+}
