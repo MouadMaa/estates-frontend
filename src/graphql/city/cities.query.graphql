@@ -1,5 +1,5 @@
 query Cities {
   cities {
-    ...Cities
+    ...City
   }
 }

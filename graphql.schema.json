@@ -429,7 +429,7 @@
       },
       {
         "kind": "OBJECT",
-        "name": "Cities",
+        "name": "City",
         "description": null,
         "fields": [
           {
@@ -528,7 +528,7 @@
       },
       {
         "kind": "OBJECT",
-        "name": "CitiesConnection",
+        "name": "CityConnection",
         "description": null,
         "fields": [
           {
@@ -540,7 +540,7 @@
               "name": null,
               "ofType": {
                 "kind": "OBJECT",
-                "name": "Cities",
+                "name": "City",
                 "ofType": null
               }
             },
@@ -553,7 +553,7 @@
             "args": [],
             "type": {
               "kind": "OBJECT",
-              "name": "CitiesGroupBy",
+              "name": "CityGroupBy",
               "ofType": null
             },
             "isDeprecated": false,
@@ -565,7 +565,7 @@
             "args": [],
             "type": {
               "kind": "OBJECT",
-              "name": "CitiesAggregator",
+              "name": "CityAggregator",
               "ofType": null
             },
             "isDeprecated": false,
@@ -579,7 +579,7 @@
       },
       {
         "kind": "OBJECT",
-        "name": "CitiesAggregator",
+        "name": "CityAggregator",
         "description": null,
         "fields": [
           {
@@ -624,7 +624,7 @@
       },
       {
         "kind": "OBJECT",
-        "name": "CitiesGroupBy",
+        "name": "CityGroupBy",
         "description": null,
         "fields": [
           {
@@ -636,7 +636,7 @@
               "name": null,
               "ofType": {
                 "kind": "OBJECT",
-                "name": "CitiesConnectionId",
+                "name": "CityConnectionId",
                 "ofType": null
               }
             },
@@ -652,7 +652,7 @@
               "name": null,
               "ofType": {
                 "kind": "OBJECT",
-                "name": "CitiesConnectionCreated_at",
+                "name": "CityConnectionCreated_at",
                 "ofType": null
               }
             },
@@ -668,7 +668,7 @@
               "name": null,
               "ofType": {
                 "kind": "OBJECT",
-                "name": "CitiesConnectionUpdated_at",
+                "name": "CityConnectionUpdated_at",
                 "ofType": null
               }
             },
@@ -684,7 +684,7 @@
               "name": null,
               "ofType": {
                 "kind": "OBJECT",
-                "name": "CitiesConnectionName",
+                "name": "CityConnectionName",
                 "ofType": null
               }
             },
@@ -700,7 +700,7 @@
               "name": null,
               "ofType": {
                 "kind": "OBJECT",
-                "name": "CitiesConnectionImage",
+                "name": "CityConnectionImage",
                 "ofType": null
               }
             },
@@ -716,7 +716,7 @@
               "name": null,
               "ofType": {
                 "kind": "OBJECT",
-                "name": "CitiesConnectionPublished_at",
+                "name": "CityConnectionPublished_at",
                 "ofType": null
               }
             },
@@ -731,7 +731,7 @@
       },
       {
         "kind": "OBJECT",
-        "name": "CitiesConnectionId",
+        "name": "CityConnectionId",
         "description": null,
         "fields": [
           {
@@ -752,7 +752,7 @@
             "args": [],
             "type": {
               "kind": "OBJECT",
-              "name": "CitiesConnection",
+              "name": "CityConnection",
               "ofType": null
             },
             "isDeprecated": false,
@@ -766,7 +766,7 @@
       },
       {
         "kind": "OBJECT",
-        "name": "CitiesConnectionCreated_at",
+        "name": "CityConnectionCreated_at",
         "description": null,
         "fields": [
           {
@@ -787,7 +787,7 @@
             "args": [],
             "type": {
               "kind": "OBJECT",
-              "name": "CitiesConnection",
+              "name": "CityConnection",
               "ofType": null
             },
             "isDeprecated": false,
@@ -801,7 +801,7 @@
       },
       {
         "kind": "OBJECT",
-        "name": "CitiesConnectionUpdated_at",
+        "name": "CityConnectionUpdated_at",
         "description": null,
         "fields": [
           {
@@ -822,7 +822,7 @@
             "args": [],
             "type": {
               "kind": "OBJECT",
-              "name": "CitiesConnection",
+              "name": "CityConnection",
               "ofType": null
             },
             "isDeprecated": false,
@@ -836,7 +836,7 @@
       },
       {
         "kind": "OBJECT",
-        "name": "CitiesConnectionName",
+        "name": "CityConnectionName",
         "description": null,
         "fields": [
           {
@@ -857,7 +857,7 @@
             "args": [],
             "type": {
               "kind": "OBJECT",
-              "name": "CitiesConnection",
+              "name": "CityConnection",
               "ofType": null
             },
             "isDeprecated": false,
@@ -871,7 +871,7 @@
       },
       {
         "kind": "OBJECT",
-        "name": "CitiesConnectionImage",
+        "name": "CityConnectionImage",
         "description": null,
         "fields": [
           {
@@ -892,7 +892,7 @@
             "args": [],
             "type": {
               "kind": "OBJECT",
-              "name": "CitiesConnection",
+              "name": "CityConnection",
               "ofType": null
             },
             "isDeprecated": false,
@@ -906,7 +906,7 @@
       },
       {
         "kind": "OBJECT",
-        "name": "CitiesConnectionPublished_at",
+        "name": "CityConnectionPublished_at",
         "description": null,
         "fields": [
           {
@@ -927,7 +927,7 @@
             "args": [],
             "type": {
               "kind": "OBJECT",
-              "name": "CitiesConnection",
+              "name": "CityConnection",
               "ofType": null
             },
             "isDeprecated": false,
@@ -1119,7 +1119,7 @@
             "args": [],
             "type": {
               "kind": "OBJECT",
-              "name": "Cities",
+              "name": "City",
               "ofType": null
             },
             "isDeprecated": false,
@@ -1177,7 +1177,7 @@
             "args": [],
             "type": {
               "kind": "OBJECT",
-              "name": "Cities",
+              "name": "City",
               "ofType": null
             },
             "isDeprecated": false,
@@ -1223,7 +1223,718 @@
             "args": [],
             "type": {
               "kind": "OBJECT",
-              "name": "Cities",
+              "name": "City",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "Type",
+        "description": null,
+        "fields": [
+          {
+            "name": "id",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "ID",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "created_at",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "DateTime",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updated_at",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "DateTime",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "name",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "published_at",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "DateTime",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "TypeConnection",
+        "description": null,
+        "fields": [
+          {
+            "name": "values",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "Type",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "groupBy",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "TypeGroupBy",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "aggregate",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "TypeAggregator",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "TypeAggregator",
+        "description": null,
+        "fields": [
+          {
+            "name": "count",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Int",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "totalCount",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Int",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "TypeGroupBy",
+        "description": null,
+        "fields": [
+          {
+            "name": "id",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "TypeConnectionId",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "created_at",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "TypeConnectionCreated_at",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updated_at",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "TypeConnectionUpdated_at",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "name",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "TypeConnectionName",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "published_at",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "TypeConnectionPublished_at",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "TypeConnectionId",
+        "description": null,
+        "fields": [
+          {
+            "name": "key",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "connection",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "TypeConnection",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "TypeConnectionCreated_at",
+        "description": null,
+        "fields": [
+          {
+            "name": "key",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "DateTime",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "connection",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "TypeConnection",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "TypeConnectionUpdated_at",
+        "description": null,
+        "fields": [
+          {
+            "name": "key",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "DateTime",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "connection",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "TypeConnection",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "TypeConnectionName",
+        "description": null,
+        "fields": [
+          {
+            "name": "key",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "connection",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "TypeConnection",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "TypeConnectionPublished_at",
+        "description": null,
+        "fields": [
+          {
+            "name": "key",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "DateTime",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "connection",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "TypeConnection",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "TypeInput",
+        "description": null,
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "name",
+            "description": null,
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              }
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "published_at",
+            "description": null,
+            "type": {
+              "kind": "SCALAR",
+              "name": "DateTime",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "created_by",
+            "description": null,
+            "type": {
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updated_by",
+            "description": null,
+            "type": {
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "editTypeInput",
+        "description": null,
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "name",
+            "description": null,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "published_at",
+            "description": null,
+            "type": {
+              "kind": "SCALAR",
+              "name": "DateTime",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "created_by",
+            "description": null,
+            "type": {
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updated_by",
+            "description": null,
+            "type": {
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "createTypeInput",
+        "description": null,
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "data",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "TypeInput",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "createTypePayload",
+        "description": null,
+        "fields": [
+          {
+            "name": "type",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "Type",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "updateTypeInput",
+        "description": null,
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "where",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "InputID",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "data",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "editTypeInput",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "updateTypePayload",
+        "description": null,
+        "fields": [
+          {
+            "name": "type",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "Type",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "deleteTypeInput",
+        "description": null,
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "where",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "InputID",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "deleteTypePayload",
+        "description": null,
+        "fields": [
+          {
+            "name": "type",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "Type",
               "ofType": null
             },
             "isDeprecated": false,
@@ -5412,52 +6123,52 @@
           },
           {
             "kind": "OBJECT",
-            "name": "Cities",
+            "name": "City",
             "ofType": null
           },
           {
             "kind": "OBJECT",
-            "name": "CitiesConnection",
+            "name": "CityConnection",
             "ofType": null
           },
           {
             "kind": "OBJECT",
-            "name": "CitiesAggregator",
+            "name": "CityAggregator",
             "ofType": null
           },
           {
             "kind": "OBJECT",
-            "name": "CitiesGroupBy",
+            "name": "CityGroupBy",
             "ofType": null
           },
           {
             "kind": "OBJECT",
-            "name": "CitiesConnectionId",
+            "name": "CityConnectionId",
             "ofType": null
           },
           {
             "kind": "OBJECT",
-            "name": "CitiesConnectionCreated_at",
+            "name": "CityConnectionCreated_at",
             "ofType": null
           },
           {
             "kind": "OBJECT",
-            "name": "CitiesConnectionUpdated_at",
+            "name": "CityConnectionUpdated_at",
             "ofType": null
           },
           {
             "kind": "OBJECT",
-            "name": "CitiesConnectionName",
+            "name": "CityConnectionName",
             "ofType": null
           },
           {
             "kind": "OBJECT",
-            "name": "CitiesConnectionImage",
+            "name": "CityConnectionImage",
             "ofType": null
           },
           {
             "kind": "OBJECT",
-            "name": "CitiesConnectionPublished_at",
+            "name": "CityConnectionPublished_at",
             "ofType": null
           },
           {
@@ -5473,6 +6184,66 @@
           {
             "kind": "OBJECT",
             "name": "deleteCityPayload",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "Type",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "TypeConnection",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "TypeAggregator",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "TypeGroupBy",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "TypeConnectionId",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "TypeConnectionCreated_at",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "TypeConnectionUpdated_at",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "TypeConnectionName",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "TypeConnectionPublished_at",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "createTypePayload",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "updateTypePayload",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "deleteTypePayload",
             "ofType": null
           },
           {
@@ -5908,7 +6679,7 @@
             ],
             "type": {
               "kind": "OBJECT",
-              "name": "Cities",
+              "name": "City",
               "ofType": null
             },
             "isDeprecated": false,
@@ -5984,7 +6755,7 @@
               "name": null,
               "ofType": {
                 "kind": "OBJECT",
-                "name": "Cities",
+                "name": "City",
                 "ofType": null
               }
             },
@@ -6046,7 +6817,186 @@
             ],
             "type": {
               "kind": "OBJECT",
-              "name": "CitiesConnection",
+              "name": "CityConnection",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "type",
+            "description": null,
+            "args": [
+              {
+                "name": "id",
+                "description": null,
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "ID",
+                    "ofType": null
+                  }
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "publicationState",
+                "description": null,
+                "type": {
+                  "kind": "ENUM",
+                  "name": "PublicationState",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              }
+            ],
+            "type": {
+              "kind": "OBJECT",
+              "name": "Type",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "types",
+            "description": null,
+            "args": [
+              {
+                "name": "sort",
+                "description": null,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "limit",
+                "description": null,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "start",
+                "description": null,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "where",
+                "description": null,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "JSON",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "publicationState",
+                "description": null,
+                "type": {
+                  "kind": "ENUM",
+                  "name": "PublicationState",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              }
+            ],
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "Type",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "typesConnection",
+            "description": null,
+            "args": [
+              {
+                "name": "sort",
+                "description": null,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "limit",
+                "description": null,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "start",
+                "description": null,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "where",
+                "description": null,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "JSON",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              }
+            ],
+            "type": {
+              "kind": "OBJECT",
+              "name": "TypeConnection",
               "ofType": null
             },
             "isDeprecated": false,
@@ -6641,6 +7591,81 @@
             "type": {
               "kind": "OBJECT",
               "name": "deleteCityPayload",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "createType",
+            "description": null,
+            "args": [
+              {
+                "name": "input",
+                "description": null,
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "createTypeInput",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              }
+            ],
+            "type": {
+              "kind": "OBJECT",
+              "name": "createTypePayload",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updateType",
+            "description": null,
+            "args": [
+              {
+                "name": "input",
+                "description": null,
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "updateTypeInput",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              }
+            ],
+            "type": {
+              "kind": "OBJECT",
+              "name": "updateTypePayload",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "deleteType",
+            "description": null,
+            "args": [
+              {
+                "name": "input",
+                "description": null,
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "deleteTypeInput",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              }
+            ],
+            "type": {
+              "kind": "OBJECT",
+              "name": "deleteTypePayload",
               "ofType": null
             },
             "isDeprecated": false,

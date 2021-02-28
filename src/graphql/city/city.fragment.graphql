@@ -1,4 +1,4 @@
-fragment Cities on Cities {
+fragment City on City {
   id
   name
   image {

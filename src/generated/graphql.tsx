@@ -72,8 +72,8 @@ export type UserPermissionsPasswordPayload = {
   ok: Scalars['Boolean'];
 };
 
-export type Cities = {
-  __typename?: 'Cities';
+export type City = {
+  __typename?: 'City';
   id: Scalars['ID'];
   created_at: Scalars['DateTime'];
   updated_at: Scalars['DateTime'];
@@ -82,63 +82,63 @@ export type Cities = {
   published_at?: Maybe<Scalars['DateTime']>;
 };
 
-export type CitiesConnection = {
-  __typename?: 'CitiesConnection';
-  values?: Maybe<Array<Maybe<Cities>>>;
-  groupBy?: Maybe<CitiesGroupBy>;
-  aggregate?: Maybe<CitiesAggregator>;
+export type CityConnection = {
+  __typename?: 'CityConnection';
+  values?: Maybe<Array<Maybe<City>>>;
+  groupBy?: Maybe<CityGroupBy>;
+  aggregate?: Maybe<CityAggregator>;
 };
 
-export type CitiesAggregator = {
-  __typename?: 'CitiesAggregator';
+export type CityAggregator = {
+  __typename?: 'CityAggregator';
   count?: Maybe<Scalars['Int']>;
   totalCount?: Maybe<Scalars['Int']>;
 };
 
-export type CitiesGroupBy = {
-  __typename?: 'CitiesGroupBy';
-  id?: Maybe<Array<Maybe<CitiesConnectionId>>>;
-  created_at?: Maybe<Array<Maybe<CitiesConnectionCreated_At>>>;
-  updated_at?: Maybe<Array<Maybe<CitiesConnectionUpdated_At>>>;
-  name?: Maybe<Array<Maybe<CitiesConnectionName>>>;
-  image?: Maybe<Array<Maybe<CitiesConnectionImage>>>;
-  published_at?: Maybe<Array<Maybe<CitiesConnectionPublished_At>>>;
+export type CityGroupBy = {
+  __typename?: 'CityGroupBy';
+  id?: Maybe<Array<Maybe<CityConnectionId>>>;
+  created_at?: Maybe<Array<Maybe<CityConnectionCreated_At>>>;
+  updated_at?: Maybe<Array<Maybe<CityConnectionUpdated_At>>>;
+  name?: Maybe<Array<Maybe<CityConnectionName>>>;
+  image?: Maybe<Array<Maybe<CityConnectionImage>>>;
+  published_at?: Maybe<Array<Maybe<CityConnectionPublished_At>>>;
 };
 
-export type CitiesConnectionId = {
-  __typename?: 'CitiesConnectionId';
+export type CityConnectionId = {
+  __typename?: 'CityConnectionId';
   key?: Maybe<Scalars['ID']>;
-  connection?: Maybe<CitiesConnection>;
+  connection?: Maybe<CityConnection>;
 };
 
-export type CitiesConnectionCreated_At = {
-  __typename?: 'CitiesConnectionCreated_at';
+export type CityConnectionCreated_At = {
+  __typename?: 'CityConnectionCreated_at';
   key?: Maybe<Scalars['DateTime']>;
-  connection?: Maybe<CitiesConnection>;
+  connection?: Maybe<CityConnection>;
 };
 
-export type CitiesConnectionUpdated_At = {
-  __typename?: 'CitiesConnectionUpdated_at';
+export type CityConnectionUpdated_At = {
+  __typename?: 'CityConnectionUpdated_at';
   key?: Maybe<Scalars['DateTime']>;
-  connection?: Maybe<CitiesConnection>;
+  connection?: Maybe<CityConnection>;
 };
 
-export type CitiesConnectionName = {
-  __typename?: 'CitiesConnectionName';
+export type CityConnectionName = {
+  __typename?: 'CityConnectionName';
   key?: Maybe<Scalars['String']>;
-  connection?: Maybe<CitiesConnection>;
+  connection?: Maybe<CityConnection>;
 };
 
-export type CitiesConnectionImage = {
-  __typename?: 'CitiesConnectionImage';
+export type CityConnectionImage = {
+  __typename?: 'CityConnectionImage';
   key?: Maybe<Scalars['ID']>;
-  connection?: Maybe<CitiesConnection>;
+  connection?: Maybe<CityConnection>;
 };
 
-export type CitiesConnectionPublished_At = {
-  __typename?: 'CitiesConnectionPublished_at';
+export type CityConnectionPublished_At = {
+  __typename?: 'CityConnectionPublished_at';
   key?: Maybe<Scalars['DateTime']>;
-  connection?: Maybe<CitiesConnection>;
+  connection?: Maybe<CityConnection>;
 };
 
 export type CityInput = {
@@ -163,7 +163,7 @@ export type CreateCityInput = {
 
 export type CreateCityPayload = {
   __typename?: 'createCityPayload';
-  city?: Maybe<Cities>;
+  city?: Maybe<City>;
 };
 
 export type UpdateCityInput = {
@@ -173,7 +173,7 @@ export type UpdateCityInput = {
 
 export type UpdateCityPayload = {
   __typename?: 'updateCityPayload';
-  city?: Maybe<Cities>;
+  city?: Maybe<City>;
 };
 
 export type DeleteCityInput = {
@@ -182,7 +182,110 @@ export type DeleteCityInput = {
 
 export type DeleteCityPayload = {
   __typename?: 'deleteCityPayload';
-  city?: Maybe<Cities>;
+  city?: Maybe<City>;
+};
+
+export type Type = {
+  __typename?: 'Type';
+  id: Scalars['ID'];
+  created_at: Scalars['DateTime'];
+  updated_at: Scalars['DateTime'];
+  name: Scalars['String'];
+  published_at?: Maybe<Scalars['DateTime']>;
+};
+
+export type TypeConnection = {
+  __typename?: 'TypeConnection';
+  values?: Maybe<Array<Maybe<Type>>>;
+  groupBy?: Maybe<TypeGroupBy>;
+  aggregate?: Maybe<TypeAggregator>;
+};
+
+export type TypeAggregator = {
+  __typename?: 'TypeAggregator';
+  count?: Maybe<Scalars['Int']>;
+  totalCount?: Maybe<Scalars['Int']>;
+};
+
+export type TypeGroupBy = {
+  __typename?: 'TypeGroupBy';
+  id?: Maybe<Array<Maybe<TypeConnectionId>>>;
+  created_at?: Maybe<Array<Maybe<TypeConnectionCreated_At>>>;
+  updated_at?: Maybe<Array<Maybe<TypeConnectionUpdated_At>>>;
+  name?: Maybe<Array<Maybe<TypeConnectionName>>>;
+  published_at?: Maybe<Array<Maybe<TypeConnectionPublished_At>>>;
+};
+
+export type TypeConnectionId = {
+  __typename?: 'TypeConnectionId';
+  key?: Maybe<Scalars['ID']>;
+  connection?: Maybe<TypeConnection>;
+};
+
+export type TypeConnectionCreated_At = {
+  __typename?: 'TypeConnectionCreated_at';
+  key?: Maybe<Scalars['DateTime']>;
+  connection?: Maybe<TypeConnection>;
+};
+
+export type TypeConnectionUpdated_At = {
+  __typename?: 'TypeConnectionUpdated_at';
+  key?: Maybe<Scalars['DateTime']>;
+  connection?: Maybe<TypeConnection>;
+};
+
+export type TypeConnectionName = {
+  __typename?: 'TypeConnectionName';
+  key?: Maybe<Scalars['String']>;
+  connection?: Maybe<TypeConnection>;
+};
+
+export type TypeConnectionPublished_At = {
+  __typename?: 'TypeConnectionPublished_at';
+  key?: Maybe<Scalars['DateTime']>;
+  connection?: Maybe<TypeConnection>;
+};
+
+export type TypeInput = {
+  name: Scalars['String'];
+  published_at?: Maybe<Scalars['DateTime']>;
+  created_by?: Maybe<Scalars['ID']>;
+  updated_by?: Maybe<Scalars['ID']>;
+};
+
+export type EditTypeInput = {
+  name?: Maybe<Scalars['String']>;
+  published_at?: Maybe<Scalars['DateTime']>;
+  created_by?: Maybe<Scalars['ID']>;
+  updated_by?: Maybe<Scalars['ID']>;
+};
+
+export type CreateTypeInput = {
+  data?: Maybe<TypeInput>;
+};
+
+export type CreateTypePayload = {
+  __typename?: 'createTypePayload';
+  type?: Maybe<Type>;
+};
+
+export type UpdateTypeInput = {
+  where?: Maybe<InputId>;
+  data?: Maybe<EditTypeInput>;
+};
+
+export type UpdateTypePayload = {
+  __typename?: 'updateTypePayload';
+  type?: Maybe<Type>;
+};
+
+export type DeleteTypeInput = {
+  where?: Maybe<InputId>;
+};
+
+export type DeleteTypePayload = {
+  __typename?: 'deleteTypePayload';
+  type?: Maybe<Type>;
 };
 
 export type UploadFile = {
@@ -711,7 +814,7 @@ export type DeleteUserPayload = {
   user?: Maybe<UsersPermissionsUser>;
 };
 
-export type Morph = UsersPermissionsMe | UsersPermissionsMeRole | UsersPermissionsLoginPayload | UserPermissionsPasswordPayload | Cities | CitiesConnection | CitiesAggregator | CitiesGroupBy | CitiesConnectionId | CitiesConnectionCreated_At | CitiesConnectionUpdated_At | CitiesConnectionName | CitiesConnectionImage | CitiesConnectionPublished_At | CreateCityPayload | UpdateCityPayload | DeleteCityPayload | UploadFile | UploadFileConnection | UploadFileAggregator | UploadFileAggregatorSum | UploadFileAggregatorAvg | UploadFileAggregatorMin | UploadFileAggregatorMax | UploadFileGroupBy | UploadFileConnectionId | UploadFileConnectionCreated_At | UploadFileConnectionUpdated_At | UploadFileConnectionName | UploadFileConnectionAlternativeText | UploadFileConnectionCaption | UploadFileConnectionWidth | UploadFileConnectionHeight | UploadFileConnectionFormats | UploadFileConnectionHash | UploadFileConnectionExt | UploadFileConnectionMime | UploadFileConnectionSize | UploadFileConnectionUrl | UploadFileConnectionPreviewUrl | UploadFileConnectionProvider | UploadFileConnectionProvider_Metadata | DeleteFilePayload | UsersPermissionsPermission | UsersPermissionsRole | UsersPermissionsRoleConnection | UsersPermissionsRoleAggregator | UsersPermissionsRoleGroupBy | UsersPermissionsRoleConnectionId | UsersPermissionsRoleConnectionName | UsersPermissionsRoleConnectionDescription | UsersPermissionsRoleConnectionType | CreateRolePayload | UpdateRolePayload | DeleteRolePayload | UsersPermissionsUser | UsersPermissionsUserConnection | UsersPermissionsUserAggregator | UsersPermissionsUserGroupBy | UsersPermissionsUserConnectionId | UsersPermissionsUserConnectionCreated_At | UsersPermissionsUserConnectionUpdated_At | UsersPermissionsUserConnectionUsername | UsersPermissionsUserConnectionEmail | UsersPermissionsUserConnectionProvider | UsersPermissionsUserConnectionConfirmed | UsersPermissionsUserConnectionBlocked | UsersPermissionsUserConnectionRole | CreateUserPayload | UpdateUserPayload | DeleteUserPayload;
+export type Morph = UsersPermissionsMe | UsersPermissionsMeRole | UsersPermissionsLoginPayload | UserPermissionsPasswordPayload | City | CityConnection | CityAggregator | CityGroupBy | CityConnectionId | CityConnectionCreated_At | CityConnectionUpdated_At | CityConnectionName | CityConnectionImage | CityConnectionPublished_At | CreateCityPayload | UpdateCityPayload | DeleteCityPayload | Type | TypeConnection | TypeAggregator | TypeGroupBy | TypeConnectionId | TypeConnectionCreated_At | TypeConnectionUpdated_At | TypeConnectionName | TypeConnectionPublished_At | CreateTypePayload | UpdateTypePayload | DeleteTypePayload | UploadFile | UploadFileConnection | UploadFileAggregator | UploadFileAggregatorSum | UploadFileAggregatorAvg | UploadFileAggregatorMin | UploadFileAggregatorMax | UploadFileGroupBy | UploadFileConnectionId | UploadFileConnectionCreated_At | UploadFileConnectionUpdated_At | UploadFileConnectionName | UploadFileConnectionAlternativeText | UploadFileConnectionCaption | UploadFileConnectionWidth | UploadFileConnectionHeight | UploadFileConnectionFormats | UploadFileConnectionHash | UploadFileConnectionExt | UploadFileConnectionMime | UploadFileConnectionSize | UploadFileConnectionUrl | UploadFileConnectionPreviewUrl | UploadFileConnectionProvider | UploadFileConnectionProvider_Metadata | DeleteFilePayload | UsersPermissionsPermission | UsersPermissionsRole | UsersPermissionsRoleConnection | UsersPermissionsRoleAggregator | UsersPermissionsRoleGroupBy | UsersPermissionsRoleConnectionId | UsersPermissionsRoleConnectionName | UsersPermissionsRoleConnectionDescription | UsersPermissionsRoleConnectionType | CreateRolePayload | UpdateRolePayload | DeleteRolePayload | UsersPermissionsUser | UsersPermissionsUserConnection | UsersPermissionsUserAggregator | UsersPermissionsUserGroupBy | UsersPermissionsUserConnectionId | UsersPermissionsUserConnectionCreated_At | UsersPermissionsUserConnectionUpdated_At | UsersPermissionsUserConnectionUsername | UsersPermissionsUserConnectionEmail | UsersPermissionsUserConnectionProvider | UsersPermissionsUserConnectionConfirmed | UsersPermissionsUserConnectionBlocked | UsersPermissionsUserConnectionRole | CreateUserPayload | UpdateUserPayload | DeleteUserPayload;
 
 export type InputId = {
   id: Scalars['ID'];
@@ -732,9 +835,12 @@ export type AdminUser = {
 
 export type Query = {
   __typename?: 'Query';
-  city?: Maybe<Cities>;
-  cities?: Maybe<Array<Maybe<Cities>>>;
-  citiesConnection?: Maybe<CitiesConnection>;
+  city?: Maybe<City>;
+  cities?: Maybe<Array<Maybe<City>>>;
+  citiesConnection?: Maybe<CityConnection>;
+  type?: Maybe<Type>;
+  types?: Maybe<Array<Maybe<Type>>>;
+  typesConnection?: Maybe<TypeConnection>;
   files?: Maybe<Array<Maybe<UploadFile>>>;
   filesConnection?: Maybe<UploadFileConnection>;
   role?: Maybe<UsersPermissionsRole>;
@@ -764,6 +870,29 @@ export type QueryCitiesArgs = {
 
 
 export type QueryCitiesConnectionArgs = {
+  sort?: Maybe<Scalars['String']>;
+  limit?: Maybe<Scalars['Int']>;
+  start?: Maybe<Scalars['Int']>;
+  where?: Maybe<Scalars['JSON']>;
+};
+
+
+export type QueryTypeArgs = {
+  id: Scalars['ID'];
+  publicationState?: Maybe<PublicationState>;
+};
+
+
+export type QueryTypesArgs = {
+  sort?: Maybe<Scalars['String']>;
+  limit?: Maybe<Scalars['Int']>;
+  start?: Maybe<Scalars['Int']>;
+  where?: Maybe<Scalars['JSON']>;
+  publicationState?: Maybe<PublicationState>;
+};
+
+
+export type QueryTypesConnectionArgs = {
   sort?: Maybe<Scalars['String']>;
   limit?: Maybe<Scalars['Int']>;
   start?: Maybe<Scalars['Int']>;
@@ -838,6 +967,9 @@ export type Mutation = {
   createCity?: Maybe<CreateCityPayload>;
   updateCity?: Maybe<UpdateCityPayload>;
   deleteCity?: Maybe<DeleteCityPayload>;
+  createType?: Maybe<CreateTypePayload>;
+  updateType?: Maybe<UpdateTypePayload>;
+  deleteType?: Maybe<DeleteTypePayload>;
   /** Delete one file */
   deleteFile?: Maybe<DeleteFilePayload>;
   /** Create a new role */
@@ -875,6 +1007,21 @@ export type MutationUpdateCityArgs = {
 
 export type MutationDeleteCityArgs = {
   input?: Maybe<DeleteCityInput>;
+};
+
+
+export type MutationCreateTypeArgs = {
+  input?: Maybe<CreateTypeInput>;
+};
+
+
+export type MutationUpdateTypeArgs = {
+  input?: Maybe<UpdateTypeInput>;
+};
+
+
+export type MutationDeleteTypeArgs = {
+  input?: Maybe<DeleteTypeInput>;
 };
 
 
@@ -976,22 +1123,22 @@ export type CitiesQueryVariables = Exact<{ [key: string]: never; }>;
 export type CitiesQuery = (
   { __typename?: 'Query' }
   & { cities?: Maybe<Array<Maybe<(
-    { __typename?: 'Cities' }
-    & CitiesFragment
+    { __typename?: 'City' }
+    & CityFragment
   )>>> }
 );
 
-export type CitiesFragment = (
-  { __typename?: 'Cities' }
-  & Pick<Cities, 'id' | 'name'>
+export type CityFragment = (
+  { __typename?: 'City' }
+  & Pick<City, 'id' | 'name'>
   & { image?: Maybe<(
     { __typename?: 'UploadFile' }
     & Pick<UploadFile, 'url'>
   )> }
 );
 
-export const CitiesFragmentDoc = gql`
-    fragment Cities on Cities {
+export const CityFragmentDoc = gql`
+    fragment City on City {
   id
   name
   image {
@@ -1002,10 +1149,10 @@ export const CitiesFragmentDoc = gql`
 export const CitiesDocument = gql`
     query Cities {
   cities {
-    ...Cities
+    ...City
   }
 }
-    ${CitiesFragmentDoc}`;
+    ${CityFragmentDoc}`;
 
 /**
  * __useCitiesQuery__
@@ -1044,19 +1191,31 @@ export type CitiesQueryResult = Apollo.QueryResult<CitiesQuery, CitiesQueryVaria
       "UsersPermissionsMeRole",
       "UsersPermissionsLoginPayload",
       "UserPermissionsPasswordPayload",
-      "Cities",
-      "CitiesConnection",
-      "CitiesAggregator",
-      "CitiesGroupBy",
-      "CitiesConnectionId",
-      "CitiesConnectionCreated_at",
-      "CitiesConnectionUpdated_at",
-      "CitiesConnectionName",
-      "CitiesConnectionImage",
-      "CitiesConnectionPublished_at",
+      "City",
+      "CityConnection",
+      "CityAggregator",
+      "CityGroupBy",
+      "CityConnectionId",
+      "CityConnectionCreated_at",
+      "CityConnectionUpdated_at",
+      "CityConnectionName",
+      "CityConnectionImage",
+      "CityConnectionPublished_at",
       "createCityPayload",
       "updateCityPayload",
       "deleteCityPayload",
+      "Type",
+      "TypeConnection",
+      "TypeAggregator",
+      "TypeGroupBy",
+      "TypeConnectionId",
+      "TypeConnectionCreated_at",
+      "TypeConnectionUpdated_at",
+      "TypeConnectionName",
+      "TypeConnectionPublished_at",
+      "createTypePayload",
+      "updateTypePayload",
+      "deleteTypePayload",
       "UploadFile",
       "UploadFileConnection",
       "UploadFileAggregator",

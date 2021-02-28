@@ -1,5 +1,4 @@
-import { FC } from 'react'
-import 'twin.macro'
+import { FC, Fragment } from 'react'
 
 import { TextLink } from '@/components/ui'
 import CityCard from '../city-card/city-card.component'
@@ -9,19 +8,12 @@ import { useCitiesQuery } from '@/generated/graphql'
 const Cities: FC = () => {
   const { cities } = useCitiesQuery().data!
 
-  console.log(cities)
+  if (!cities) return <Fragment />
 
   return (
     <StyledCities>
       <h2>Propriétés au Maroc par ville</h2>
-
-      <div>
-        <CityCard />
-        <CityCard />
-        <CityCard />
-        <CityCard />
-      </div>
-
+      <div>{cities.map((city) => city && <CityCard key={city.id} city={city} />)}</div>
       <TextLink href='/' text='Découvrez plus de villes' />
     </StyledCities>
   )
