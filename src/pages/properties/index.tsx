@@ -21,7 +21,7 @@ const Properties: FC = () => {
 
   const htmlContent = []
   if (show === 'both') {
-    htmlContent.push(<AllProperties />, <MapContent />)
+    htmlContent.push(<AllProperties key={1} />, <MapContent key={2} />)
   } else if (show === 'properties') {
     htmlContent.push(<AllProperties />)
   } else if (show === 'map') {

@@ -16,7 +16,7 @@ export const StyledHeader = styled.header(({ showHeaderBG }: { showHeaderBG: boo
     }
   `,
   showHeaderBG && [
-    tw`h-16 text-gray-700 bg-gray-50 shadow-sm`,
+    tw`h-16 text-gray-700 bg-gray-50 shadow`,
     css`
       > a {
         ${tw`text-primary-default`};
