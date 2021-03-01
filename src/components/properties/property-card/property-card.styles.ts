@@ -48,7 +48,7 @@ export const StyledPropertyCard = styled.article(() => [
             ${tw`flex items-center space-x-1`};
 
             svg {
-              ${tw`w-4 h-4 text-gray-500 fill-current`}
+              ${tw`w-3 sm:w-4 h-3 sm:h-4 text-gray-500 fill-current`}
             }
 
             span {

@@ -1,14 +1,37 @@
-import { FC } from 'react'
+import { FC, useEffect, useState } from 'react'
 import tw from 'twin.macro'
 
+import { useWindowSize } from '@/hooks/useWindowSize'
 import AllProperties from '@/components/properties/all-properties/all-properties.component'
-import Map from '@/components/properties/map/map.component'
+import MapContent from '@/components/properties/map-content/map-content.component'
+import MapButton from '@/components/properties/map-button/map-button.component'
 
 const Properties: FC = () => {
+  const [show, setShow] = useState('both')
+
+  const { width } = useWindowSize()
+
+  useEffect(() => {
+    if (!width) setShow('both')
+    else if (width > 1024) setShow('both')
+    else setShow('properties')
+  }, [width])
+
+  const handleShow = () => setShow(show === 'map' ? 'properties' : 'map')
+
+  const htmlContent = []
+  if (show === 'both') {
+    htmlContent.push(<AllProperties />, <MapContent />)
+  } else if (show === 'properties') {
+    htmlContent.push(<AllProperties />)
+  } else if (show === 'map') {
+    htmlContent.push(<MapContent />)
+  }
+
   return (
     <StyledProperties>
-      <AllProperties />
-      <Map />
+      {htmlContent}
+      <MapButton onClick={handleShow} mapIsOpen={show === 'map'} />
     </StyledProperties>
   )
 }
