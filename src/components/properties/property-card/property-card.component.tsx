@@ -21,7 +21,7 @@ const PropertyCard: FC = () => {
       </figure>
       <div>
         <div>
-          <p>200 000 DHS / MOIS</p>
+          <span>200 000 DHS / MOIS</span>
           <div>
             <div>
               <AddressSvg />

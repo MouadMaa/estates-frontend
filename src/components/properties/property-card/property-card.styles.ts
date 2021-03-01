@@ -1,10 +1,14 @@
 import tw, { css, styled } from 'twin.macro'
 
 export const StyledPropertyCard = styled.article(() => [
-  tw`grid grid-cols-3 h-44 cursor-pointer rounded-lg shadow-lg overflow-hidden transition-shadow duration-500`,
+  tw`grid grid-cols-1 sm:grid-cols-3 cursor-pointer rounded-lg shadow-lg overflow-hidden transition duration-300 transform scale-100 active:scale-95`,
   css`
+    min-height: 192px;
+
     figure {
       ${tw`relative flex items-center w-full h-full`};
+
+      min-height: 160px;
 
       img {
         ${tw`absolute h-full w-full object-cover`}
@@ -28,13 +32,13 @@ export const StyledPropertyCard = styled.article(() => [
     }
 
     > div {
-      ${tw`col-span-2 p-4 space-y-3.5 bg-gray-50`};
+      ${tw`col-span-2 px-2 py-4 sm:px-4 space-y-3.5 bg-gray-50`};
 
       > div:first-of-type {
-        ${tw`flex items-start justify-between flex-col-reverse sm:flex-row`};
+        ${tw`flex items-start justify-between flex-col-reverse sm:flex-row flex-wrap`};
 
-        p {
-          ${tw`text-xs tracking-wide px-2.5 py-0.5 rounded-lg text-gray-50 bg-primary-default`}
+        > span {
+          ${tw`text-xs tracking-wide px-2.5 py-0.5 capitalize rounded-lg text-gray-50 bg-primary-default`}
         }
 
         > div {
@@ -48,7 +52,7 @@ export const StyledPropertyCard = styled.article(() => [
             }
 
             span {
-              ${tw`text-sm text-gray-600`}
+              ${tw`text-xs sm:text-sm text-gray-600`}
             }
           }
         }
@@ -58,11 +62,11 @@ export const StyledPropertyCard = styled.article(() => [
         ${tw`space-y-1.5`};
 
         h2 {
-          ${tw`font-semibold text-lg leading-tight`}
+          ${tw`sm:text-lg font-semibold leading-tight`}
         }
 
         div {
-          ${tw`flex items-center space-x-2 text-xs uppercase font-semibold tracking-wide text-gray-600`}
+          ${tw`flex items-center space-x-2 text-xs lowercase sm:uppercase font-semibold tracking-wide text-gray-600`}
         }
       }
     }
