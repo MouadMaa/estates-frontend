@@ -1,7 +1,7 @@
 import tw, { css, styled } from 'twin.macro'
 
 export const StyledPropertyCard = styled.article(() => [
-  tw`grid grid-cols-1 sm:grid-cols-3 cursor-pointer rounded-lg shadow-lg overflow-hidden transition duration-300 transform scale-100 active:scale-95`,
+  tw`grid grid-cols-1 sm:grid-cols-3 cursor-pointer rounded-lg shadow-lg overflow-hidden transition duration-300`,
   css`
     min-height: 192px;
 
