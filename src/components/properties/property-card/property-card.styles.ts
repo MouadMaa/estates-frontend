@@ -6,7 +6,7 @@ export const StyledPropertyCard = styled.article(() => [
     min-height: 192px;
 
     figure {
-      ${tw`relative flex items-center w-full h-full`};
+      ${tw`relative flex items-center w-full h-full cursor-auto`};
 
       min-height: 160px;
 

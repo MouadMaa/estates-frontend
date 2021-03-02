@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from 'react'
+import { FC, Fragment, useEffect, useState } from 'react'
 import tw from 'twin.macro'
 
 import { useWindowSize } from '@/hooks/useWindowSize'
@@ -19,13 +19,18 @@ const Properties: FC = () => {
 
   const handleShow = () => setShow(show === 'map' ? 'properties' : 'map')
 
-  const htmlContent = []
+  let htmlContent = null
   if (show === 'both') {
-    htmlContent.push(<AllProperties key={1} />, <MapContent key={2} />)
+    htmlContent = (
+      <Fragment>
+        <AllProperties />
+        <MapContent />
+      </Fragment>
+    )
   } else if (show === 'properties') {
-    htmlContent.push(<AllProperties />)
+    htmlContent = <AllProperties />
   } else if (show === 'map') {
-    htmlContent.push(<MapContent />)
+    htmlContent = <MapContent />
   }
 
   return (

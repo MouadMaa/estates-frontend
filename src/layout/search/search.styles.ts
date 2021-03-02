@@ -1,7 +1,7 @@
 import tw, { css, styled } from 'twin.macro'
 
-export const StyledSearch = styled.section(() => [
-  tw`sticky top-0 z-20 flex items-center justify-center pt-20 pb-4 bg-gray-50 shadow-sm`,
+export const StyledSearch = styled.section(({ removePadding }: { removePadding: boolean }) => [
+  tw`sticky top-0 z-20 flex items-center justify-center p-4 bg-gray-50 shadow transition-all duration-300 ease-out`,
   css`
     form {
       ${tw`m-0 shadow-none hover:shadow-none`};
@@ -17,4 +17,5 @@ export const StyledSearch = styled.section(() => [
       }
     }
   `,
+  removePadding ? [tw`pt-4`] : [tw`pt-20`],
 ])

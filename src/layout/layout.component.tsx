@@ -1,5 +1,6 @@
-import { FC, Fragment, useState } from 'react'
+import { FC, Fragment, useEffect, useState } from 'react'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 
 import GlobalStyles from '@/styles/GlobalStyles'
 import Header from './header/header.component'
@@ -9,8 +10,14 @@ import { StyledMain } from './layout.styles'
 const Layout: FC = (props) => {
   const { children } = props
 
+  const router = useRouter()
+
   const [showSearchButton, setShowSearchButton] = useState(false)
   const [showSearchForm, setShowSearchForm] = useState(false)
+
+  useEffect(() => {
+    setShowSearchButton(router.pathname !== '/')
+  }, [router])
 
   return (
     <Fragment>

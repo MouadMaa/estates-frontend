@@ -18,7 +18,7 @@ const TypeCard: FC<TypeCardProps> = (props) => {
     <StyledTypeCard className='group'>
       <figure>
         <Image
-          src={image?.url || ''}
+          src={image?.url as string}
           alt={name}
           layout='fill'
           objectFit='cover'
